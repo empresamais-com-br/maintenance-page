@@ -1,6 +1,6 @@
 # maintenance-page
 
-As cores que você usou:
+Cores usadas:
 
 **Background**
 - `#0a0a1a` — azul escuro profundo
@@ -21,10 +21,9 @@ As cores que você usou:
 
 **Tema geral:** Dark mode tech/cyberpunk com tons de azul profundo e acentos em cyan neon. Passa uma vibe de dashboard de monitoramento, painel de controle futurista.
 
+---
 
-Você tem razão! A paleta atual é ótima pra landing page/manutenção, mas pra uma **plataforma de atendimento completa** precisa de mais cores funcionais.
-
-Vou expandir mantendo a essência:
+Expandir cores mantendo a essência:
 
 | Função | Cor | Uso |
 |--------|-----|-----|
@@ -57,5 +56,3 @@ Vou expandir mantendo a essência:
 | Resolvido | `#22c55e` | Verde |
 | Cancelado | `#6b6b80` | Cinza |
 | Urgente | `#ef4444` | Vermelho |
-
-Quer que eu gere um arquivo CSS com todas as variáveis ou um guia visual dessa paleta?
