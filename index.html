@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manutenção Programada</title>
+  <title>Sistema Temporariamente Indisponível</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -19,21 +19,26 @@
     .icon { font-size: 4rem; margin-bottom: 1.5rem; }
     h1 { font-size: 1.75rem; margin-bottom: 1rem; font-weight: 600; }
     p { font-size: 1rem; opacity: 0.8; line-height: 1.6; margin-bottom: 1.5rem; }
-    .time {
-      background: rgba(255,255,255,0.1);
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
+    .btn {
       display: inline-block;
-      font-size: 0.9rem;
+      background: #7dd3fc;
+      color: #1a1a2e;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
     }
+    .btn:hover { background: #a5e0fb; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="icon">🔧</div>
-    <h1>Manutenção Programada</h1>
-    <p>Estamos atualizando o sistema para melhor atendê-lo.</p>
-    <div class="time">Previsão de retorno: 18:00</div>
+    <div class="icon">⚙️</div>
+    <h1>Sistema Temporariamente Indisponível</h1>
+    <p>Nosso servidor está em manutenção ou apresentou um erro. Deixe seu email e avisaremos quando o sistema voltar.</p>
+    <a href="https://forms.gle/SEU-FORM-ID" target="_blank" class="btn">Quero ser avisado</a>
   </div>
 </body>
 </html>
