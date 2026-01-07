@@ -15,9 +15,10 @@
       justify-content: center;
       background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #0f0f23 100%);
       color: #fff;
-      overflow-x: hidden;
+      overflow: hidden;
     }
     
+    /* grid de fundo */
     .grid-bg {
       position: fixed;
       top: 0;
@@ -31,6 +32,7 @@
       pointer-events: none;
     }
     
+    /* container principal */
     .main {
       display: flex;
       align-items: center;
@@ -42,16 +44,15 @@
       z-index: 1;
     }
     
+    /* mapa do brasil */
     .map-container {
       position: relative;
       flex-shrink: 0;
-      width: 500px;
-      height: 570px;
     }
     
     .map-container svg {
-      width: 100%;
-      height: 100%;
+      width: 500px;
+      height: auto;
       filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.2));
     }
     
@@ -64,6 +65,7 @@
       animation: stateOff 4s ease-in-out infinite;
     }
     
+    /* estados apagando em sequência */
     .map-container svg path:nth-child(1) { animation-delay: 0s; }
     .map-container svg path:nth-child(2) { animation-delay: 0.15s; }
     .map-container svg path:nth-child(3) { animation-delay: 0.3s; }
@@ -112,6 +114,7 @@
       stroke-opacity: 1 !important;
     }
     
+    /* símbolos + nos estados */
     .state-dots {
       position: absolute;
       top: 0;
@@ -140,41 +143,41 @@
     }
     
     /* Região Norte */
-    .dot:nth-child(1) { top: 37%; left: 15%; animation-delay: 0s; } /* AC */
+    .dot:nth-child(1) { top: 43%; left: 15%; animation-delay: 0s; } /* AC */
     .dot:nth-child(2) { top: 28%; left: 28%; animation-delay: 0.1s; } /* AM */
-    .dot:nth-child(3) { top: 16%; left: 33%; animation-delay: 0.2s; } /* RR */
-    .dot:nth-child(4) { top: 28%; left: 52%; animation-delay: 0.3s; } /* PA */
-    .dot:nth-child(5) { top: 16%; left: 57%; animation-delay: 0.4s; } /* AP */
-    .dot:nth-child(6) { top: 42%; left: 30%; animation-delay: 0.5s; } /* RO */
-    .dot:nth-child(7) { top: 43%; left: 62%; animation-delay: 0.6s; } /* TO */
+    .dot:nth-child(3) { top: 17%; left: 33%; animation-delay: 0.2s; } /* RR */
+    .dot:nth-child(4) { top: 30%; left: 50%; animation-delay: 0.3s; } /* PA */
+    .dot:nth-child(5) { top: 17%; left: 57%; animation-delay: 0.4s; } /* AP */
+    .dot:nth-child(6) { top: 46%; left: 30%; animation-delay: 0.5s; } /* RO */
+    .dot:nth-child(7) { top: 49%; left: 62%; animation-delay: 0.6s; } /* TO */
     
     /* Região Nordeste */
-    .dot:nth-child(8) { top: 29%; left: 69%; animation-delay: 0.7s; } /* MA */
-    .dot:nth-child(9) { top: 38%; left: 73%; animation-delay: 0.8s; } /* PI */
-    .dot:nth-child(10) { top: 29%; left: 84%; animation-delay: 0.9s; } /* CE */
-    .dot:nth-child(11) { top: 31%; left: 91%; animation-delay: 1s; } /* RN */
-    .dot:nth-child(12) { top: 37%; left: 89%; animation-delay: 1.1s; } /* PB */
-    .dot:nth-child(13) { top: 42%; left: 84%; animation-delay: 1.2s; } /* PE */
-    .dot:nth-child(14) { top: 46%; left: 91%; animation-delay: 1.3s; } /* AL */
-    .dot:nth-child(15) { top: 51%; left: 88%; animation-delay: 1.4s; } /* SE */
-    .dot:nth-child(16) { top: 54%; left: 75%; animation-delay: 1.5s; } /* BA */
+    .dot:nth-child(8) { top: 34%; left: 68%; animation-delay: 0.7s; } /* MA */
+    .dot:nth-child(9) { top: 43%; left: 73%; animation-delay: 0.8s; } /* PI */
+    .dot:nth-child(10) { top: 34%; left: 83%; animation-delay: 0.9s; } /* CE */
+    .dot:nth-child(11) { top: 36%; left: 90%; animation-delay: 1s; } /* RN */
+    .dot:nth-child(12) { top: 43%; left: 90%; animation-delay: 1.1s; } /* PB */
+    .dot:nth-child(13) { top: 49%; left: 86%; animation-delay: 1.2s; } /* PE */
+    .dot:nth-child(14) { top: 53%; left: 91%; animation-delay: 1.3s; } /* AL */
+    .dot:nth-child(15) { top: 58%; left: 89%; animation-delay: 1.4s; } /* SE */
+    .dot:nth-child(16) { top: 60%; left: 76%; animation-delay: 1.5s; } /* BA */
     
     /* Região Centro-Oeste */
-    .dot:nth-child(17) { top: 48%; left: 46%; animation-delay: 1.6s; } /* MT */
-    .dot:nth-child(18) { top: 57%; left: 60%; animation-delay: 1.7s; } /* GO */
-    .dot:nth-child(19) { top: 56%; left: 65%; animation-delay: 1.8s; } /* DF */
-    .dot:nth-child(20) { top: 64%; left: 44%; animation-delay: 1.9s; } /* MS */
+    .dot:nth-child(17) { top: 52%; left: 46%; animation-delay: 1.6s; } /* MT */
+    .dot:nth-child(18) { top: 65%; left: 62%; animation-delay: 1.7s; } /* GO */
+    .dot:nth-child(19) { top: 65%; left: 66%; animation-delay: 1.8s; } /* DF */
+    .dot:nth-child(20) { top: 72%; left: 45%; animation-delay: 1.9s; } /* MS */
     
     /* Região Sudeste */
-    .dot:nth-child(21) { top: 67%; left: 70%; animation-delay: 2s; } /* MG */
-    .dot:nth-child(22) { top: 66%; left: 81%; animation-delay: 2.1s; } /* ES */
-    .dot:nth-child(23) { top: 73%; left: 79%; animation-delay: 2.2s; } /* RJ */
-    .dot:nth-child(24) { top: 72%; left: 62%; animation-delay: 2.3s; } /* SP */
+    .dot:nth-child(21) { top: 75%; left: 71%; animation-delay: 2s; } /* MG */
+    .dot:nth-child(22) { top: 75%; left: 83%; animation-delay: 2.1s; } /* ES */
+    .dot:nth-child(23) { top: 84%; left: 81%; animation-delay: 2.2s; } /* RJ */
+    .dot:nth-child(24) { top: 83%; left: 63%; animation-delay: 2.3s; } /* SP */
     
     /* Região Sul */
-    .dot:nth-child(25) { top: 76%; left: 57%; animation-delay: 2.4s; } /* PR */
-    .dot:nth-child(26) { top: 85%; left: 58%; animation-delay: 2.5s; } /* SC */
-    .dot:nth-child(27) { top: 92%; left: 48%; animation-delay: 2.6s; } /* RS */
+    .dot:nth-child(25) { top: 87%; left: 57%; animation-delay: 2.4s; } /* PR */
+    .dot:nth-child(26) { top: 95%; left: 58%; animation-delay: 2.5s; } /* SC */
+    .dot:nth-child(27) { top: 97%; left: 47%; animation-delay: 2.6s; } /* RS */
     
     @keyframes dotOff {
       0% { 
@@ -197,6 +200,7 @@
       }
     }
     
+    /* conteudo */
     .content {
       max-width: 500px;
     }
@@ -330,38 +334,25 @@
       margin-top: 0.25rem;
     }
     
+    /* responsivo */
     @media (max-width: 1024px) {
       .main {
         flex-direction: column;
         gap: 2rem;
       }
       
-      .map-container {
+      .map-container svg {
         width: 350px;
-        height: 400px;
-      }
-      
-      .content {
-        text-align: center;
       }
       
       h1 {
         font-size: 2rem;
       }
-      
-      .dot {
-        font-size: 12px;
-      }
     }
     
     @media (max-width: 600px) {
-      .main {
-        padding: 1rem;
-      }
-      
-      .map-container {
+      .map-container svg {
         width: 280px;
-        height: 320px;
       }
       
       h1 {
@@ -371,30 +362,6 @@
       .content {
         padding: 0 1rem;
       }
-      
-      .btn {
-        width: 100%;
-        justify-content: center;
-      }
-      
-      .dot {
-        font-size: 10px;
-      }
-    }
-    
-    @media (max-width: 375px) {
-      .map-container {
-        width: 240px;
-        height: 275px;
-      }
-      
-      h1 {
-        font-size: 1.3rem;
-      }
-      
-      .dot {
-        font-size: 8px;
-      }
     }
   </style>
 </head>
@@ -403,39 +370,65 @@
   
   <div class="main">
     <div class="map-container">
-      <svg viewBox="0 0 700 800" xmlns="http://www.w3.org/2000/svg">
-        <!-- Estados grandes primeiro (ficam embaixo) -->
-        <path d="M 120 180 L 220 160 L 280 180 L 300 220 L 280 280 L 200 300 L 140 290 L 120 270 L 100 220 Z" title="AM"/>
-        <path d="M 280 180 L 380 160 L 440 180 L 460 220 L 440 280 L 380 300 L 300 300 L 280 280 L 300 220 Z" title="PA"/>
-        <path d="M 280 300 L 380 300 L 400 350 L 420 400 L 400 460 L 320 480 L 260 440 L 240 380 L 260 320 Z" title="MT"/>
-        <path d="M 480 340 L 550 360 L 600 380 L 610 420 L 580 500 L 520 520 L 460 480 L 460 400 Z" title="BA"/>
-        <path d="M 460 460 L 520 480 L 560 520 L 540 580 L 480 600 L 440 560 L 440 520 Z" title="MG"/>
-        <path d="M 280 440 L 340 440 L 380 480 L 380 560 L 340 600 L 280 580 L 260 520 Z" title="MS"/>
-        <path d="M 400 520 L 460 520 L 480 560 L 520 600 L 480 640 L 420 640 L 380 600 L 380 560 Z" title="SP"/>
-        <path d="M 400 400 L 460 400 L 480 460 L 460 520 L 400 520 L 380 480 L 400 460 Z" title="GO"/>
-        <path d="M 520 240 L 560 250 L 570 300 L 550 360 L 510 350 L 480 340 L 460 290 L 520 290 Z" title="PI"/>
-        <path d="M 570 300 L 610 320 L 640 330 L 650 360 L 600 380 L 550 360 Z" title="PE"/>
-        <!-- Estados médios -->
-        <path d="M 200 100 L 260 90 L 280 120 L 270 160 L 220 160 L 190 140 Z" title="RR"/>
-        <path d="M 380 100 L 420 90 L 440 120 L 430 160 L 380 160 L 360 140 Z" title="AP"/>
+      <!-- Mapa do Brasil SVG -->
+      <svg viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+        <!-- Acre -->
         <path d="M 80 280 L 120 270 L 140 290 L 130 320 L 90 330 L 70 310 Z" title="AC"/>
-        <path d="M 180 300 L 240 300 L 260 340 L 240 380 L 200 380 L 170 340 Z" title="RO"/>
+        <!-- Amazonas -->
+        <path d="M 120 180 L 220 160 L 280 180 L 300 220 L 280 280 L 200 300 L 140 290 L 120 270 L 100 220 Z" title="AM"/>
+        <!-- Roraima -->
+        <path d="M 200 100 L 260 90 L 280 120 L 270 160 L 220 160 L 190 140 Z" title="RR"/>
+        <!-- Pará -->
+        <path d="M 280 180 L 380 160 L 440 180 L 460 220 L 440 280 L 380 300 L 300 300 L 280 280 L 300 220 Z" title="PA"/>
+        <!-- Amapá -->
+        <path d="M 380 100 L 420 90 L 440 120 L 430 160 L 380 160 L 360 140 Z" title="AP"/>
+        <!-- Maranhão -->
         <path d="M 440 180 L 520 190 L 540 240 L 520 290 L 460 290 L 440 280 L 460 220 Z" title="MA"/>
+        <!-- Tocantins -->
         <path d="M 420 290 L 460 290 L 480 340 L 460 400 L 420 400 L 400 350 Z" title="TO"/>
+        <!-- Piauí -->
+        <path d="M 520 240 L 560 250 L 570 300 L 550 360 L 510 350 L 480 340 L 460 290 L 520 290 Z" title="PI"/>
+        <!-- Ceará -->
         <path d="M 560 220 L 610 210 L 630 250 L 610 290 L 570 300 L 560 250 Z" title="CE"/>
-        <!-- Estados pequenos por último (ficam por cima) -->
+        <!-- Rio Grande do Norte -->
         <path d="M 610 230 L 650 220 L 660 250 L 640 280 L 610 290 L 630 250 Z" title="RN"/>
+        <!-- Paraíba -->
         <path d="M 610 290 L 660 280 L 670 310 L 640 330 L 600 320 Z" title="PB"/>
+        <!-- Pernambuco -->
+        <path d="M 570 300 L 610 320 L 640 330 L 650 360 L 600 380 L 550 360 Z" title="PE"/>
+        <!-- Alagoas -->
         <path d="M 620 360 L 660 350 L 670 380 L 640 400 L 610 390 Z" title="AL"/>
+        <!-- Sergipe -->
         <path d="M 610 400 L 650 390 L 660 420 L 630 440 L 600 420 Z" title="SE"/>
-        <path d="M 560 520 L 600 510 L 610 550 L 580 580 L 550 560 Z" title="ES"/>
-        <path d="M 540 580 L 590 570 L 600 600 L 560 620 L 530 600 Z" title="RJ"/>
+        <!-- Bahia -->
+        <path d="M 480 340 L 550 360 L 600 380 L 610 420 L 580 500 L 520 520 L 460 480 L 460 400 Z" title="BA"/>
+        <!-- Mato Grosso -->
+        <path d="M 280 300 L 380 300 L 400 350 L 420 400 L 400 460 L 320 480 L 260 440 L 240 380 L 260 320 Z" title="MT"/>
+        <!-- Goiás -->
+        <path d="M 400 400 L 460 400 L 480 460 L 460 520 L 400 520 L 380 480 L 400 460 Z" title="GO"/>
+        <!-- Distrito Federal -->
         <path d="M 450 450 L 470 445 L 475 465 L 455 470 Z" title="DF"/>
+        <!-- Minas Gerais -->
+        <path d="M 460 460 L 520 480 L 560 520 L 540 580 L 480 600 L 440 560 L 440 520 Z" title="MG"/>
+        <!-- Espírito Santo -->
+        <path d="M 560 520 L 600 510 L 610 550 L 580 580 L 550 560 Z" title="ES"/>
+        <!-- Rio de Janeiro -->
+        <path d="M 540 580 L 590 570 L 600 600 L 560 620 L 530 600 Z" title="RJ"/>
+        <!-- São Paulo -->
+        <path d="M 400 520 L 460 520 L 480 560 L 520 600 L 480 640 L 420 640 L 380 600 L 380 560 Z" title="SP"/>
+        <!-- Mato Grosso do Sul -->
+        <path d="M 280 440 L 340 440 L 380 480 L 380 560 L 340 600 L 280 580 L 260 520 Z" title="MS"/>
+        <!-- Paraná -->
         <path d="M 380 560 L 420 560 L 450 600 L 430 650 L 380 660 L 350 620 Z" title="PR"/>
+        <!-- Santa Catarina -->
         <path d="M 380 660 L 430 650 L 450 680 L 420 710 L 380 700 Z" title="SC"/>
+        <!-- Rio Grande do Sul -->
         <path d="M 340 680 L 380 700 L 400 740 L 360 780 L 300 760 L 290 720 Z" title="RS"/>
+        <!-- Rondônia -->
+        <path d="M 180 300 L 240 300 L 260 340 L 240 380 L 200 380 L 170 340 Z" title="RO"/>
       </svg>
       
+      <!-- 27 símbolos + nos estados -->
       <div class="state-dots">
         <div class="dot"></div>
         <div class="dot"></div>
