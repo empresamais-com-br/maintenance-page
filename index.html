@@ -44,11 +44,19 @@
       text-transform: uppercase;
       letter-spacing: 0.15em;
     }
+    h1 .small {
+      font-size: 0.5rem;
+      vertical-align: super;
+    }
     p { 
       font-size: 0.9rem; 
       opacity: 0.8; 
       line-height: 1.8; 
       margin-bottom: 1.5rem;
+    }
+    p .small {
+      font-size: 0.5rem;
+      vertical-align: super;
     }
     .status {
       font-size: 0.8rem;
@@ -76,22 +84,30 @@
       color: #0a0a0a;
       box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
     }
-    .footer {
+    .message {
       margin-top: 2rem;
-      font-size: 0.7rem;
-      opacity: 0.4;
+      font-size: 0.8rem;
+      opacity: 0.6;
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .signature {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      opacity: 0.5;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">[ SYSTEM STATUS ]</div>
-    <div class="icon">⚠</div>
-    <h1>Servidor Offline</h1>
-    <p>Sistema em manutenção ou erro detectado.<br>Operação normal será restaurada em breve.</p>
-    <div class="status">aguardando reconexão...</div>
-    <a href="https://forms.gle/SEU-FORM-ID" target="_blank" class="btn">[ Notifique-me ]</a>
-    <div class="footer">empresa+ sistemas</div>
+    <div class="header">[ SECURITY ALERT ]</div>
+    <div class="icon">🔓</div>
+    <h1>ACESSO <span class="small">não</span> COMPROMETIDO</h1>
+    <p>Suas informações <span class="small">não</span> foram expostas.<br>Apenas manutenção de rotina.</p>
+    <div class="status">restaurando serviços...</div>
+    <a href="https://forms.gle/SEU-FORM-ID" target="_blank" class="btn">[ Me avise quando voltar ]</a>
+    <div class="message">não se preocupe, alguém pouco produtivo<br>logo colocará o sistema no ar.</div>
+    <div class="signature">att., Guilherme Gonçalves da Silva</div>
   </div>
 </body>
 </html>
